@@ -68,6 +68,7 @@ Children:
     DataType: Boolean
     Value: false
   - Name: Period
+    Id: g=321012e65e954e8f10bac7a62f4c0f6a
     Type: BaseDataVariableType
     DataType: Duration
     Value: "0:00:01:0.0000000"
@@ -118,3 +119,16 @@ Children:
         Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
         ValueRank: ScalarOrOneDimension
         Value: 0
+- Name: ClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Id: g=3dd937892d636d056bb797b5148c1e12
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
