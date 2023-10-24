@@ -169,3 +169,8 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- Name: xTimeSet
+  Id: g=9a78fedca9a0edc7ae87584a276f80c5
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:5.0000000"
