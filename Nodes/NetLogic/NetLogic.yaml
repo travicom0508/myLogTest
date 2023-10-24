@@ -1,0 +1,120 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: SimulateVariables
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iCos
+    Id: g=8e7d019c0c1f9c8253751c240cbf58b0
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iRamp
+    Id: g=b2526cde166342f239fc5f98bb2b1a01
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: bRunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: iSin2
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iCos2
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iRamp2
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iSin3
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iCos3
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iRamp3
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iSin4
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iCos4
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iRamp4
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+- Name: PeriodicActionLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Enabled
+    Id: g=74cb5edca513f86ff050229050bc2c49
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Period
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:01:0.0000000"
+  - Name: Action
+    Type: MethodInvocation
+    Children:
+    - Class: Reference
+      Target: ns=3;i=98
+      Direction: Forward
+    - Name: ObjectPointer
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":58}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../Commands/VariableCommands@NodeId"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Method
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set"
+    - Name: InputArguments
+      Type: BaseObjectType
+      Children:
+      - Name: VariableToModify
+        Type: BaseDataVariableType
+        DataType: VariablePointer
+        Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+        Value: {"IdType":2,"Id":"1238c164afe435c1c068a89fb79120f8","Namespace":20}
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: SamplingModeEnum
+        Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+        Value: 0
+      - Name: ArrayIndex
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+        ValueRank: ScalarOrOneDimension
+        Value: 0
