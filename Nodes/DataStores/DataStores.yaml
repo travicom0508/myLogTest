@@ -166,6 +166,28 @@ Children:
           Type: StoreColumn
           DataType: String
           Value: ""
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
   - Class: Reference
     Target: ns=17;i=30
     Direction: Forward

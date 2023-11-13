@@ -174,3 +174,7 @@ Children:
   Type: BaseDataVariableType
   DataType: Duration
   Value: "0:00:00:5.0000000"
+- Name: DiskUsage
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0

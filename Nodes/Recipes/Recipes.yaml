@@ -1,2 +1,66 @@
 Name: Recipes
 Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+  - Class: Reference
+    Target: ns=21;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bf26df3ed274240e11429a62269d0a91","Namespace":20}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":11}
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"365cc8e567a6dc7e7a7f27b7a6db84b5","Namespace":20}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}

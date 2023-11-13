@@ -132,3 +132,19 @@ Children:
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "1601-01-01T00:00:00.0000000"
+- Name: ImportExportModel
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: StartingNodeToFetch
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"365cc8e567a6dc7e7a7f27b7a6db84b5","Namespace":20}
+  - Class: Method
+    Name: ExportModelToCsv
+  - Class: Method
+    Name: ImportModelFromCsv

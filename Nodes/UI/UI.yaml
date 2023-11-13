@@ -100,7 +100,7 @@ Children:
   - Name: EnableVirtualKeyboard
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
@@ -175,6 +175,38 @@ Children:
           Type: NodePointer
           DataType: NodeId
           Value: {"IdType":2,"Id":"04891a5718a129f2145672d6836b393b","Namespace":20}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
+      - Name: Panel4
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Trend from Logger"}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"c8693b7419c48143d6ec88e70ae67b2c","Namespace":20}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":5}
+      - Name: Panel5
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"0608117dc5d478b037d6e3929e21961c","Namespace":20}
           Children:
           - Name: Kind
             Type: PropertyType
@@ -277,5 +309,79 @@ Children:
     DataType: String
     ModellingRule: Optional
     Value: "DataLogSimulator"
+  - Name: txtDiskUsage
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../CalcoloSpazioOccupato/Dimensione"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: lblDiskUsage
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Database Disk Usage:"}
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 27.0
+  - Name: CalcoloSpazioOccupato
+    Type: NetLogic
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Dimensione
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 0
+    - Name: Database
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"bf26df3ed274240e11429a62269d0a91","Namespace":20}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
 - File: Screens/Screens.yaml
 - File: Templates/Templates.yaml
+- File: addStyleSheets/addStyleSheets.yaml

@@ -9,7 +9,7 @@ Children:
     Id: g=1238c164afe435c1c068a89fb79120f8
     Type: PropertyType
     DataType: SamplingModeEnum
-    Value: 0
+    Value: 1
   - Name: Store
     Type: NodePointer
     DataType: NodeId
@@ -23,6 +23,7 @@ Children:
     Type: BaseObjectType
     Children:
     - Name: iSin
+      Id: g=09ba1c32d3daf0e597a119521077c85a
       Type: VariableToLog
       DataType: BaseDataType
       Children:
@@ -357,7 +358,7 @@ Children:
     Id: g=46d61ed3e789612d15fb7c4edab6c910
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:01:0.0000000"
+    Value: "0:00:00:5.0000000"
 - Name: EventLogger1
   Type: EventLogger
   Children:
